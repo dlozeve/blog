@@ -22,7 +22,7 @@ interests = [
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "MSc in Statistical Science"
-  institution = "Oxford University"
+  institution = "University of Oxford"
   year = 2018
 
 [[education.courses]]

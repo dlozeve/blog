@@ -12,8 +12,8 @@ weight = 1
 # List your academic interests.
 [interests]
 interests = [
-	"Artificial Intelligence",
 	"Statistics",
+	"Machine Learning",
 	"Functional programming",
 	"Optimization",
 	"Embedded programming"

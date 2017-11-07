@@ -139,6 +139,11 @@ defaultContentLanguageInSubdir = false
     link = "//linkedin.com/in/dimitrilozeve"
 
   [[params.social]]
+    icon = "stack-overflow"
+    icon_pack = "fa"
+    link = "https://stackoverflow.com/story/dimitrilozeve"
+
+  [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
     link = "//twitter.com/DimitriLozeve"

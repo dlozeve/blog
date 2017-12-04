@@ -37,3 +37,11 @@ interests = [
 
 +++
 
+Hi! I am an MSc student in Statistical Science at the University of
+Oxford. I enjoy applying Machine Learning and statistical modelling
+techniques to real-life problems, especially in (social) network and
+time-series analysis.
+
+During my free time, I love tinkering with functional programming
+languages for scientific simulations and with embedded development and
+electronics.

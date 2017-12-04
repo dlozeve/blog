@@ -25,7 +25,7 @@ defaultContentLanguageInSubdir = false
 # Configure BlackFriday Markdown rendering.
 #   See: https://gohugo.io/readfiles/bfconfig/
 [blackfriday]
-  hrefTargetBlank = true  # `true` opens external links in a new tab.
+  hrefTargetBlank = false  # `true` opens external links in a new tab.
   fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
@@ -90,7 +90,7 @@ defaultContentLanguageInSubdir = false
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Jan 2, 2006"
+  date_format = "Mon, Jan 2, 2006"
   #   Examples: "3:04 pm" or "15:04"
   time_format = "15:04"
 
@@ -178,7 +178,7 @@ defaultContentLanguageInSubdir = false
   [params.publications]
     # Date format (refer to Go's date format: http://fuckinggodateformat.com )
     #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-    date_format = "January, 2006"
+    date_format = "Mon, Jan 2, 2006"
 
   # Configuration of project pages.
   [params.projects]
@@ -259,12 +259,17 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "Projects"
   url = "#projects"
+  weight = 3
+
+[[menu.main]]
+  name = "CV"
+  url = "#cv"
   weight = 2
 
 [[menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 3
+  weight = 4
 
 # [[menu.main]]
 #   name = "Teaching"

@@ -1,0 +1,62 @@
+---
+title: "Skills in Statistics, Data Science and Machine Learning"
+date: 2017-12-05T16:31:02Z
+draft: false
+---
+
+
+* Statistics
+
+  - Knowledge of Linear Models and Generalised Linear Models
+    (including logistic regression), both in theory and in
+    applications
+  - Classical Statistical inference (maximum likelihood estimation,
+    method of moments, minimal variance unbiased estimators) and
+    testing (including goodness of fit)
+  - Knowledge of Bayesian Analysis techniques for inference and
+    testing
+  - Experience in Dimensionality Reduction (PCA)
+  - Good knowledge of R for statistical modelling and plotting
+
+* Data Analysis
+
+  - Experience with large datasets, for classification and regression
+  - Descriptive statistics, plotting (with dimensionality reduction)
+  - Data cleaning and formatting
+  - Experience with unstructured data coming directly from embedded
+    sensors to a microcontroller
+  - Experience with large graph and network data
+  - Experience with live data from APIs
+  - Data analysis with Pandas, xarray (Python) and the tidyverse (R)
+  - Basic knowledge of SQL
+
+* Graph and Network Analysis
+
+  - Research project on community detection and graph clustering
+    (theory and implementation)
+  - Random graph models
+  - Estimation in networks (Stein's method for Normal and Poisson
+    estimation)
+  - Network Analysis with NetworkX, graph-tool (Python) and igraph (R)
+
+* Time Series Analysis
+
+  - experience in analysing inertial sensors data (accelerometer,
+    gyroscope, magnetometer), both in real-time and in post-processing
+  - use of statistical method for step detection, gait detection, and
+    trajectory reconstruction
+  - Kalman filtering, Fourier and wavelet analysis
+  - Machine Learning methods applied to time series (decision trees,
+    SVMs and Recurrent Neural Networks in particular)
+  - Experience with signal processing functions in Numpy and Scipy
+    (Python)
+
+* Machine Learning
+
+  - Experience with the most common methods and techniques
+  - Random forests, SVMs, Neural Networks (including CNNs and RNNs),
+    both theoretical knowledge and practical experience
+  - Bagging and boosting estimators
+  - Machine Learning libraries: Scikit-Learn, PyTorch, TensorFlow,
+    Keras
+

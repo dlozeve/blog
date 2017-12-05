@@ -106,6 +106,8 @@ weight: 2
 
      *Software:* Git, GNU/Linux, LaTeX, [[https://aws.amazon.com/][Amazon AWS]], [[https://www.wolfram.com/mathematica/][Wolfram Mathematica]], Microsoft Office
 
+     See also [[skills][a complete list of my skills in Statistics, Data Science and Machine Learning]].
+
 **** Languages
 
      - French

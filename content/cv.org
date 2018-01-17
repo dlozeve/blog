@@ -35,16 +35,16 @@ weight: 2
      - step detection using artificial intelligence on inertial sensors data
      - statistical methods for trajectory reconstruction
      - /Award:/ Best Research Internship 2017, from École polytechnique
-     - [[sysnav_internship.pdf][Outline of the confidential report (PDF, in French)]] and [[https://dlozeve.github.io/stage3a/][slides]]
+     - [[/sysnav_internship.pdf][Outline of the confidential report (PDF, in French)]] and [[https://dlozeve.github.io/stage3a/][slides]]
 
-     [[sysnav.org][More...]]
+     [[{{< relref "sysnav.org" >}}][More...]]
 
 **** Natixis London Branch, Global Infrastructure and Projects: Intern Analyst
      June-August 2016
 
      Origination and execution of project finance transactions: offshore windfarms, hydroelectric dams, and a biomass power plant now under construction in northeastern England.
 
-     [[natixis_report.pdf][Internship report (PDF, in French)]]
+     [[/natixis_report.pdf][Internship report (PDF, in French)]]
 
 **** French Engineering Corps: Army officer
      2014-2015
@@ -64,20 +64,20 @@ weight: 2
 
      - Comparison of the performance of state-of-the-art algorithms (theory and implementations)
      - Application to large-scale, real-world social networks
-     - [[communitydetection.pdf][Dissertation (PDF, in French)]] and [[https://dlozeve.github.io/reveal_CommunityDetection/][slides]]
+     - [[/communitydetection.pdf][Dissertation (PDF, in French)]] and [[https://dlozeve.github.io/reveal_CommunityDetection/][slides]]
 
 **** SERB X-CubeSat II program: a nano-satellite dedicated to Sun-Earth relationship
      2015-2016
 
      - Solar Irradiance and Earth Radiation Budget: Payload preliminary design
      - Co-authored [[http://dx.doi.org/10.1117/12.2222660][SPIE Proceedings article]] on the project’s technical specifications
-     - [[serb.pdf][Dissertation (PDF, in French)]]
+     - [[/serb.pdf][Dissertation (PDF, in French)]]
 
 **** Research work on Markov Chains and Queuing Theory
      2013-2014
 
      - Study on the convergence of queues through algebra and numerical simulations
-     - [[filesdattente.pdf][Dissertation (PDF, in French)]]
+     - [[/filesdattente.pdf][Dissertation (PDF, in French)]]
 
 * Languages and skills
 
@@ -106,7 +106,7 @@ weight: 2
 
      *Software:* Git, GNU/Linux, LaTeX, [[https://aws.amazon.com/][Amazon AWS]], [[https://www.wolfram.com/mathematica/][Wolfram Mathematica]], Microsoft Office
 
-     See also [[skills][a complete list of my skills in Statistics, Data Science and Machine Learning]].
+     See also [[{{< ref "skills.org" >}}][a complete list of my skills in Statistics, Data Science and Machine Learning]].
 
 **** Languages
 

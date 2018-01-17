@@ -45,3 +45,5 @@ time-series analysis.
 During my free time, I love tinkering with functional programming
 languages for scientific simulations and with embedded development and
 electronics.
+
+[See my full CV.](cv)

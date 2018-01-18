@@ -179,7 +179,21 @@ to the ~LSystem~ data type using
 
 * Variations on L-systems
 
-# TODO
+We can widen the possibilities of L-systems in various ways. L-systems
+are in effect deterministic context-free grammars.
+
+By allowing multiple rewriting rules for each symbol with
+probabilities, we can extend the model to
+[[https://en.wikipedia.org/wiki/Probabilistic_context-free_grammar][probabilistic
+context-free grammars]].
+
+We can also have replacement rules not for a single symbol, but for a
+subsequence of them, thus effectively taking into account their
+neighbours (context-sensitive grammars). This seems very close to 1D
+cellular automata.
+
+Finally, L-systems could also have a 3D representation (for instance
+space-filling curves in 3 dimensions).
 
 * Usage notes
 

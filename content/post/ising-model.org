@@ -1,0 +1,57 @@
+#+TITLE: Ising model simulation
+#+AUTHOR: Dimitri Lozeve
+#+DATE: 2018-02-05
+#+DRAFT: true
+#+TAGS: ising visualization simulation montecarlo
+
+The [[https://en.wikipedia.org/wiki/Ising_model][Ising model]] is a
+model used to represent magnetic dipole moments in statistical
+physics. Physical details are on the Wikipedia page, but what is
+interesting is that it follows a complex probability distribution on a
+lattice, where each site can take the value +1 or -1.
+
+{{< figure
+    src="/img/ising.gif"
+>}}
+
+* Mathematical definition
+
+We have a lattice $\Lambda$ consisting of sites $k$. For each site,
+there is a moment $\sigma_k \in \{ -1, +1 \}$. $\sigma =
+(\sigma_k)_{k\in\Lambda}$ is called the /configuration/ of the
+lattice.
+
+The total energy of the configuration is given by the /Hamiltonian/ 
+\[
+H(\sigma) = -\sum_{i\sim j} J_{ij}\, \sigma_i\, \sigma_j,
+\]
+where $i\sim j$ denotes /neighbours/, and $J$ is the
+ /interaction matrix/.
+
+The /configuration probability/ is given by:
+\[
+\pi_\beta(\sigma) = \frac{e^{-\beta H(\sigma)}}{Z_\beta}
+\]
+where $\beta = (k_B T)^{-1}$ is the inverse temperature,
+and $Z_\beta$ the normalisation constant.
+
+For our simulation, we will use a constant interaction term $J > 0$.
+If $\sigma_i = \sigma_j$, the probability will be proportional to
+$\exp(\beta J)$, otherwise it would be $\exp(\beta J)$. Thus, adjacent
+spins will try to align themselves.
+
+* Simulation
+
+The Ising model is generally simulated using Markov Chain Monte Carlo
+(MCMC), with the
+[[https://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm][Metropolis-Hastings]]
+algorithm.
+
+The algorithm starts from a random configuration and runs as follows:
+
+1. Select a site $i$ at random and reverse its spin: $\sigma'_i = -\sigma_i$
+2. Compute the variation in energy (hamiltonian) $\Delta E = H(\sigma') - H(\sigma)$
+3. If the energy is lower, accept the new configuration
+4. Otherwise, draw a uniform random number $u \in ]0,1[$ and accept the new configuration if $u < \min(1, e^{-\beta \Delta E})$.
+
+* Implementation

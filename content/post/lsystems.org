@@ -101,7 +101,7 @@ are different systems altogether.
 The mathematical definition above translate almost immediately in a
 Haskell data type:
 
-#+BEGIN_SRC haskell
+{{< highlight haskell >}}
 -- | L-system data type
 data LSystem a = LSystem
   { name :: String
@@ -117,7 +117,7 @@ data LSystem a = LSystem
                                          -- and constant should be
                                          -- represented
   } deriving (Eq, Show, Generic)
-#+END_SRC
+{{< / highlight >}}
 
 Here, ~a~ is the type of the literal in the alphabet. For all
 practical purposes, it will almost always be ~Char~.
@@ -152,7 +152,7 @@ to encode them in some form. We chose to represent them as JSON
 values.
 
 Here is an example for the [[https://en.wikipedia.org/wiki/Gosper_curve][Gosper curve]]:
-#+BEGIN_SRC json
+{{< highlight  json >}}
 {
   "name": "gosper",
   "alphabet": "AB+-",
@@ -170,7 +170,7 @@ Here is an example for the [[https://en.wikipedia.org/wiki/Gosper_curve][Gosper 
     ["-", "TurnLeft"]
   ]
 }
-#+END_SRC
+{{< / highlight >}}
 
 Using this format, it is easy to define new L-systems (along with how
 they should be represented). This is translated nearly automatically

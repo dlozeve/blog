@@ -1,7 +1,7 @@
 #+TITLE: Ising model simulation in APL
 #+AUTHOR: Dimitri Lozeve
 #+DATE: 2018-03-05
-#+DRAFT: true
+#+DRAFT: false
 #+TAGS: ising simulation montecarlo apl
 
 * The APL family of languages
@@ -60,10 +60,8 @@ L←{(2×?⍵ ⍵⍴2)-3}
 Let's deconstruct what is done here:
 - ⍵ is the argument of our function.
 - We generate a ⍵×⍵ matrix filled with 2, using the ~⍴~ function: ~⍵ ⍵⍴2~
-- ~?~ draws a random number between 1 and its argument. We give it our
-  matrix to generate a random matrix of 1 and 2.
-- We multiply everything by 2 and subtract 3, so that the result is in
-  $\{-1,+1\}$.
+- ~?~ draws a random number between 1 and its argument. We give it our matrix to generate a random matrix of 1 and 2.
+- We multiply everything by 2 and subtract 3, so that the result is in $\{-1,+1\}$.
 - Finally, we assign the result to the name ~L~.
 
 Sample output:
@@ -90,16 +88,11 @@ see [[{{< ref "ising-model.org" >}}][my previous post]]).
 }
 {{< / highlight >}}
 
-- ⍺ is the left argument (coordinates of the site), ⍵ is the right
-  argument (lattice).
+- ⍺ is the left argument (coordinates of the site), ⍵ is the right argument (lattice).
 - We extract the x and y coordinates of the site.
 - ~N~ is the size of the lattice.
-- ~xn~ and ~yn~ are respectively the vertical and lateral neighbours
-  of the site. ~N|~ takes the coordinates modulo ~N~ (so the lattice
-  is actually a torus). (Note: we used ~⎕IO←0~ to use 0-based array
-  indexing.)
-- ~+/~ sums over all neighbours of the site, and then we multiply by
-  the value of the site itself to get $\Delta E$.
+- ~xn~ and ~yn~ are respectively the vertical and lateral neighbours of the site. ~N|~ takes the coordinates modulo ~N~ (so the lattice is actually a torus). (Note: we used ~⎕IO←0~ to use 0-based array indexing.)
+- ~+/~ sums over all neighbours of the site, and then we multiply by the value of the site itself to get $\Delta E$.
 
 Sample output, for site $(3, 3)$ in a random $5\times 5$ lattice:
 
@@ -124,10 +117,8 @@ U←{
 - ⍺ is the $\beta$ parameter of the Ising model, ⍵ is the lattice.
 - We draw a random site $(x,y)$ with the ~?~ function.
 - ~new~ is the lattice but with the $(x,y)$ site flipped.
-- We compute the probability $\alpha = \exp(-\beta\Delta E)$ using the
-  ~*~ function (exponential) and our previous ~∆E~ function.
-- ~?0~ returns a uniform random number in $[0,1)$. Based on this
-  value, we decide whether to update the lattice, and we return it.
+- We compute the probability $\alpha = \exp(-\beta\Delta E)$ using the ~*~ function (exponential) and our previous ~∆E~ function.
+- ~?0~ returns a uniform random number in $[0,1)$. Based on this value, we decide whether to update the lattice, and we return it.
 
 We can now bring everything together for display:
 
@@ -136,8 +127,7 @@ Ising←{' ⌹'[1+1=({10 U ⍵}⍣⍵)L ⍺]}
 {{< / highlight>}}
 
 - We draw a random lattice of size ⍺ with ~L ⍺~.
-- We apply to it our update function, with $\beta$=10, ⍵ times (using
-  the ~⍣~ function, which applies a function $n$ times.
+- We apply to it our update function, with $\beta$=10, ⍵ times (using the ~⍣~ function, which applies a function $n$ times.
 - Finally, we display -1 as a space and 1 as a domino ⌹.
 
 Final output, with a $80\times 80$ random lattice, after 50000 update
@@ -257,5 +247,25 @@ Complete code, with the namespace:
 :EndNamespace
 {{< / highlight >}}
 
+* Conclusion
 
+The algorithm is very fast (I think it can be optimized by the
+interpreter because there is no branching), and is easy to reason
+about. The whole program fits in a few lines, and you clearly see what
+each function and each line does. It could probably be optimized
+further (I don't know every APL function yet...), and also could
+probably be golfed to a few lines (at the cost of readability?).
 
+It took me some time to write this, but Dyalog's tools make it really
+easy to insert symbols and to look up what they do. Next time, I will
+look into some ASCII-based APL descendants. J seems to have a [[http://code.jsoftware.com/wiki/NuVoc][good
+documentation]] and a tradition of /tacit definitions/, similar to the
+point-free style in Haskell. Overall, J seems well-suited to modern
+functional programming, while APL is still under the influence of its
+early days when it was more procedural. Another interesting area is K,
+Q, and their database engine kdb+, which seems to be extremely
+performant and actually used in production.
+
+Still, Unicode symbols make the code much more readable, mainly
+because there is a one-to-one link between symbols and functions,
+which cannot be maintained with only a few ASCII characters.

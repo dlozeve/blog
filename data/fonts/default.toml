@@ -2,13 +2,13 @@
 name = "Default"
 
 # Optional Google font URL
-google_fonts = "IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Serif"
+google_fonts = "Roboto|Roboto+Mono|Roboto+Slab&amp;subset=latin-ext"
 
 # Font families
-heading_font = "IBM Plex Sans"
-body_font = "IBM Plex Serif"
-nav_font = "IBM Plex Sans"
-mono_font = "IBM Plex Mono"
+heading_font = "Roboto Slab"
+body_font = "Roboto"
+nav_font = "Roboto"
+mono_font = "Roboto Mono"
 
 # Font size
 font_size = "20"

@@ -44,8 +44,6 @@ weight: 2
 
      Origination and execution of project finance transactions: offshore windfarms, hydroelectric dams, and a biomass power plant now under construction in northeastern England.
 
-     [[/natixis_report.pdf][Internship report (PDF, in French)]]
-
 **** French Engineering Corps: Army officer
      2014-2015
 

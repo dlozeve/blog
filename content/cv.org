@@ -56,6 +56,12 @@ weight: 2
      - /French Republic Distinctions:/ Overseas Medal, National Defence Medal
 
 * Scientific projects
+**** Topological Data Analysis of time-dependent networks
+     2018
+
+     - Master's thesis, joint work with Oxford's Department of Statistics and Mathematical Institute
+     - Application of the recent advances in Topological Data Analysis (TDA) and Persistent Homology to multilayer and temporal networks
+     - Ongoing project
 
 **** Research work on Community Detection in Social Networks
      2016-2017

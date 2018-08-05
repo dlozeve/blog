@@ -335,3 +335,49 @@ enableGitInfo = true
 # Configure the English version of the website.
 [Languages.en]
   languageCode = "en-us"
+[Languages.fr]
+  languageCode = "fr"
+  [Languages.fr.params]
+      role = "Étudiant en statistiques et machine learning"
+
+[[Languages.fr.menu.main]]
+name = "Accueil"
+url = "#about"
+weight = 1
+
+# [[Languages.fr.menu.main]]
+#   name = "Publications"
+#   url = "#publications_selected"
+#   weight = 2
+
+[[Languages.fr.menu.main]]
+  name = "Projets"
+  url = "#projects"
+  weight = 3
+
+# [[Languages.fr.menu.main]]
+#   name = "CV"
+#   url = "#cv"
+#   weight = 2
+
+[[Languages.fr.menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 2
+
+# [[Languages.fr.menu.main]]
+#   name = "Teaching"
+#   url = "#teaching"
+#   weight = 5
+
+[[Languages.fr.menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 6
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# [[Languages.fr.menu.main]]
+#    name = "CV"
+#    url = "files/cv.pdf"
+#    weight = 7

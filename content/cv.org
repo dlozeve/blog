@@ -37,8 +37,6 @@ weight: 2
      - /Award:/ Best Research Internship 2017, from École polytechnique
      - [[/sysnav_internship.pdf][Outline of the confidential report (PDF, in French)]] and [[https://dlozeve.github.io/stage3a/][slides]]
 
-     [[{{< relref "sysnav.org" >}}][More...]]
-
 **** Natixis London Branch, Global Infrastructure and Projects: Intern Analyst
      June-August 2016
 
@@ -110,7 +108,7 @@ weight: 2
 
      *Software:* Git, GNU/Linux, LaTeX, [[https://aws.amazon.com/][Amazon AWS]], [[https://www.wolfram.com/mathematica/][Wolfram Mathematica]], Microsoft Office
 
-     See also [[{{< ref "skills.org" >}}][a complete list of my skills in Statistics, Data Science and Machine Learning]].
+     See also [[/skills][a complete list of my skills in Statistics, Data Science and Machine Learning]].
 
 **** Languages
 

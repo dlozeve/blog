@@ -58,8 +58,8 @@ weight: 2
      2018
 
      - Master's thesis, joint work with Oxford's Department of Statistics and Mathematical Institute
-     - Application of the recent advances in Topological Data Analysis (TDA) and Persistent Homology to multilayer and temporal networks
-     - Ongoing project
+     - Application of the recent advances in Topological Data Analysis (TDA) and Persistent Homology to periodicity detection in temporal networks
+     - [[/tdanetworks.pdf][Dissertation]]
 
 **** Research work on Community Detection in Social Networks
      2016-2017

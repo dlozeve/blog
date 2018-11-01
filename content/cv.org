@@ -8,25 +8,10 @@ weight: 2
 ---
 
 
-* Education
-
-**** University of Oxford: [[https://www.ox.ac.uk/admissions/graduate/courses/msc-statistical-science][MSc in Statistical Science]]
-     2017-2018
-
-     - Applied and computational statistics, statistical machine learning and statistical inference
-
-**** [[https://www.polytechnique.edu/][École polytechnique]]
-     2014-2017
-
-     - Majors in Applied Mathematics and Data Science, Computer Science, and Physics
-     - /Distinctions:/ Outstanding Investment, Outstanding Leadership
-
-**** Lycée Privé Sainte-Geneviève, Versailles: Preparatory classes to French *Grandes Écoles*
-     2012-2014
-
-     - Majors in Mathematics and Physics
-
 * Work experience
+
+**** Destygo: R&D Data Scientist
+     2018-present
 
 **** Sysnav: Real-time geolocalization algorithm on an embedded device
      March-August 2017
@@ -52,6 +37,23 @@ weight: 2
      - Security Officer during the building of a Bailey bridge in Bangui
      - Participation in an intelligence gathering mission in the Northeastern part of the country
      - /French Republic Distinctions:/ Overseas Medal, National Defence Medal
+* Education
+
+**** University of Oxford: [[https://www.ox.ac.uk/admissions/graduate/courses/msc-statistical-science][MSc in Statistical Science]]
+     2017-2018
+
+     - Applied and computational statistics, statistical machine learning and statistical inference
+
+**** [[https://www.polytechnique.edu/][École polytechnique]]
+     2014-2017
+
+     - Majors in Applied Mathematics and Data Science, Computer Science, and Physics
+     - /Distinctions:/ Outstanding Investment, Outstanding Leadership
+
+**** Lycée Privé Sainte-Geneviève, Versailles: Preparatory classes to French *Grandes Écoles*
+     2012-2014
+
+     - Majors in Mathematics and Physics
 
 * Scientific projects
 **** Topological Data Analysis of time-dependent networks
@@ -106,7 +108,7 @@ weight: 2
 
      *Haskell, Lisp (Scheme):* Hobby projects ([[https://github.com/dlozeve/orbit][N-body simulation]], [[https://github.com/dlozeve/Civilisation-hs][SAT solver]], [[https://github.com/dlozeve/aoc2017][Advent of Code 2017]])
 
-     *Software:* Git, GNU/Linux, LaTeX, [[https://aws.amazon.com/][Amazon AWS]], [[https://www.wolfram.com/mathematica/][Wolfram Mathematica]], Microsoft Office
+     *Software:* Git, GNU/Linux, LaTeX, [[https://aws.amazon.com/][Amazon AWS]], [[https://www.mongodb.com/][MongoDB]], [[https://www.wolfram.com/mathematica/][Wolfram Mathematica]], Microsoft Office
 
      See also [[/skills][a complete list of my skills in Statistics, Data Science and Machine Learning]].
 
